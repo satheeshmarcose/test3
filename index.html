@@ -4,6 +4,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
  @media (max-width: 800px){
+  #menuicon{width:70px;height:70px;overflow:hidden}
   #menutab{width:0px;height:0px;overflow:hidden}
  #openmenu{width:100%;float:right;position:fixed;background-color:black;z-index:500;text-align:center;height:100%;padding:top:40px;color:white}
  }
@@ -12,6 +13,7 @@ h1{text-align:center;}
   font-family: dosis;
   src: url(Dosis-VariableFont_wght.ttf);
 }
+ #menuicon{width:0px;height:0px;overflow:hidden}
  #openmenu{width:0px;top:0;height:0px;overflow:hidden;position:absolute;background-color:blue;z-index:500}
 *{font-family:calibri}
 #welcome{padding:9%;}
@@ -84,6 +86,11 @@ h1{text-align:center;}
 <div id="teamin"><img id="teamimage" src="4.jpg"><h4 style="margin:0px;padding:0px;padding-top:15px">Michael Maniparampil</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px">Vice President</h5></div>
 <div id="teamin"><img id="teamimage" src="5.jpg"><h4 style="margin:0px;padding:0px;padding-top:15px">Dr. Sibil Philip</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px">Jt. Secretary</h5></div>
 </div> <!-------------team div ends here--------------->
+ 
+ 
+<div id="menuicon" onclick="openmenu()"><!---------------menuicon div starts------------>
+<img style="width:70px;height:70px" src="menu.png">
+</div><!---------------menuicon div ends------------------>
 
 </body>
 <script>
@@ -91,6 +98,7 @@ function openmenu()
 {
 document.getElementById("openmenu").innerHTML="<div 'menuitems'><h3>Home</h3></div><div 'menuitems'><h3>About Us</h3></div><div 'menuitems'><h3>Office Beares</h3></div><div 'menuitems'><h3>Kalamela-2022</h3></div><div 'menuitems'><h3>Membership</h3></div><div 'menuitems'><h3>Puraskaram</h3></div><div 'menuitems'><h3>Events Gallery</h3></div><div 'menuitems'><h3>Contact Us</h3></div><div 'menuitems' onclick='close()'><img style='padding-top:30px;width:30px' src='close.png'></div>";}
 function close(){document.getElementById("openmenu").innerHTML="";}
+ 
 
 
 var i=0;
