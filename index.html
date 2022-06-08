@@ -3,7 +3,9 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
- 
+#a{position:absolute;animation-name:slide1;animation-duration:5s;margin-top:200px;margin-left:382px}
+	#b{position:absolute;animation-name:slide3;animation-duration:5s;margin-top:270px;margin-left:350px}
+	#c{position:absolute;animation-name:slide2;animation-duration:5s;margin-top:389px;margin-left:550px} 
  
 h1{text-align:center;}
  @font-face {
@@ -29,13 +31,18 @@ h1{text-align:center;}
   #menutab{width:0px;height:0px;overflow:hidden;}
   
   #menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:30px;margin:5px;z-index:700;}
-  
+  #a{position:absolute;animation-name:slide1;animation-duration:5s;margin-top:85px;margin-left:127px;width:100px}
+	#b{position:absolute;animation-name:slide3;animation-duration:5s;margin-top:98px;margin-left:100px;width:150px}
+	#c{position:absolute;animation-name:slide2;animation-duration:5s;margin-top:122px;margin-left:143px;width:70px}
   
  }
 #clickmenu{width:100%;height:100%;float:right;position:fixed;background-color:black;text-align:center;padding-top:40px;color:white;z-index:710;overflow:hidden;left:-100%;background-color:red}
 </style>
 </head>
 <body style="margin:0px">
+ <div id="a"><img style="width:100%;" src="chi.png"></div>
+	<div id="b"><img style="width:100%;" src="background1.png"></div>
+	<div id="c"><img style="width:100%;" src="date.png"></div>
  <div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
  <div id="clickmenu" ><!-------------clickmenu div starts here---------------->
 <div id='openmenu'><div id='menuitems'><h3>Home</h3></div><div id='menuitems'><h3>About Us</h3></div><div id='menuitems'><h3>Office Beares</h3></div><div id='menuitems'><h3>Kalamela-2022</h3></div><div id='menuitems'><h3>Membership</h3></div><div id='menuitems'><h3>Puraskaram</h3></div><div id='menuitems'><h3>Events Gallery</h3></div><div id='menuitems'><h3>Contact Us</h3></div><div id='menuitems' onclick='closer()'>close</div></div>
