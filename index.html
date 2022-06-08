@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
-
-
+ @media (max-width: 800px){#menutab{width:0px;height:0px;overflow:hidden}}
 h1{text-align:center;}
  @font-face {
-  font-family: inter;
-  src: url(Inter-VariableFont_slnt,wght.ttf);
-}
-@font-face {
-  font-family: Dosis;
+  font-family: dosis;
   src: url(Dosis-VariableFont_wght.ttf);
 }
-#openmenu{width:0px;top:0;height:0px;overflow:hidden;position:absolute;background-color:blue;z-index:500}
 *{font-family:calibri}
 #welcome{padding:9%;}
 #pres{padding:9%;padding-top:40px;padding-bottom:50px;background-color:#5a4a52;color:white;margin-bototm:0px}
-#men{padding-left:15px;font-family:Dosis}
+#men{padding-left:15px;font-family:dosis}
 #media{margin:0px;background-color:#dadada;}
 #pt{width:28%;height:50px;display:inline-block;padding:2%}
 #pt:hover{transform:scale(1.1,1.1);transition:.5s}
 #im{height:100px;width:100%}
-#team{text-align:center;width:100%;padding-top:30px;background-color:#5a4a52;padding-bottom:40px}
+#team{text-align:center;width:100%;padding-top:30px;background-color:#2b2b2b;padding-bottom:40px}
 #teamin{width:170px;height:auto;margin:1%;display:inline-block;background-color:#d5d5d5}
 #teamimage{width:100%}
 #bot{width:100%;height:80px;background-color:#d5d5d5}
-@media (max-width: 800px)
-{
-#menutab{width:0px;height:0px;overflow:hidden}
-#openmenu{width:100%;float:right;position:fixed;background-color:black;z-index:500;text-align:center;height:100%;padding:top:40px;color:white}
-
-}
 </style>
 </head>
 <body style="margin:0px">
-<div id="openmenu"><!-------------openmenu div starts here---------------->
-
-</div><!-------------openmenu div ends here---------------->
 <div style="width:100%;height:auto;background-color:white"><img src="CMA_LOGO.jpg" style="disply:inline-block;width:23%">
-<table id="menutab" style="display:inline-block;margin-left:4%;margin-top:15px;vertical-align:top;">
+<table id="menutab" style="display:inline-block;margin-left:4%;margin-top:15px;vertical-align:top">
 <tr>
 <th id="men">Home</th><th id="men">About Us<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Office Beares<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Kalamela-2022<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Membership<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Puraskaram<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Events</th><th id="men">Gallery<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Contact Us</th>
 </tr>
@@ -71,11 +56,11 @@ h1{text-align:center;}
 
 <div id="media"><!---------------------media div starts here!----------------------------------------------------------------->
 
-<div style="max-width:500px;background-color:#dadada;display:inline-block;padding:5%;margin:2.25%"><h1>Latest Event Photos</h1>
+<div style="max-width:500px;background-color:#dadada;display:inline-block;padding:5%;margin:2.25%;border:1px solid white"><h1>Latest Event Photos</h1>
 <div id="phot"></div>
 </div>
 
-<div style="max-width:500px;background-color:#dadada;display:inline-block;padding:5%;margin:2.25%"><h1>Latest Event Videos</h1>
+<div style="max-width:500px;background-color:#dadada;display:inline-block;padding:5%;margin:2.25%;border:1px solid white"><h1>Latest Event Videos</h1>
 <div>
 <iframe width="100%" height="222px" src="https://www.youtube.com/embed/a2YhwwnlRgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -93,14 +78,12 @@ h1{text-align:center;}
 <div id="teamin"><img id="teamimage" src="5.jpg"><h4 style="margin:0px;padding:0px;padding-top:15px">Dr. Sibil Philip</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px">Jt. Secretary</h5></div>
 </div> <!-------------team div ends here--------------->
 
-
-
 </body>
 <script>
-function openmenu()
+function menuopen()
 {
-document.getElementById("openmenu").innerHTML="<div 'menuitems'><h3>Home</h3></div><div 'menuitems'><h3>About Us</h3></div><div 'menuitems'><h3>Office Beares</h3></div><div 'menuitems'><h3>Kalamela-2022</h3></div><div 'menuitems'><h3>Membership</h3></div><div 'menuitems'><h3>Puraskaram</h3></div><div 'menuitems'><h3>Events Gallery</h3></div><div 'menuitems'><h3>Contact Us</h3></div><div 'menuitems' onclick='close()'><img style='padding-top:30px;width:30px' src='close.png'></div>";}
-function close(){document.getElementById("openmenu").innerHTML="";}
+document.getElementById("menuopen").innerHTML="<table id='menutab'><tr><th id='openmenu'>Home</th></tr><tr><th id='openmenu'>About Us</th></tr><tr><th id='openmenu'>Office Beares</th></tr><tr><th id='openmenu'>Kalamela-2022</th></tr><tr><th id='openmenu'>Membership</th></tr><tr><th id='openmenu'>Puraskaram</th></tr><tr><th id='openmenu'>Events</th></tr><tr><th id='openmenu'>Gallery</th></tr><tr><th id='openmenu'>Contact Us</th></tr></table>";
+}
 
 
 var i=0;
