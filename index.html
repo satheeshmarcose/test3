@@ -3,6 +3,7 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+	#logo{display:inline-block;width:23%}
 		@keyframes slide1 {
   0%{opacity:0}
   20%{opacity:0}
@@ -22,7 +23,7 @@
   80%{opacity:1}
   100%{opacity:1}
 }
-	#logo{display:inline-block;width:23%}
+	
 #a{position:absolute;animation-name:slide1;animation-duration:5s;margin-top:200px;margin-left:382px}
 	#b{position:absolute;animation-name:slide3;animation-duration:5s;margin-top:270px;margin-left:350px}
 	#c{position:absolute;animation-name:slide2;animation-duration:5s;margin-top:389px;margin-left:550px} 
@@ -49,14 +50,14 @@ h1{text-align:center;}
 #teamimage{width:100%}
 #bot{width:100%;height:80px;background-color:#d5d5d5}
  @media (max-width: 800px){
-  #logo{display:inline-block;width:100%}
+  
   #menutab{width:0px;height:0px;overflow:hidden;}
   
   #menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:30px;margin:5px;z-index:700;}
   #a{position:absolute;animation-name:slide1;animation-duration:5s;margin-top:85px;margin-left:127px;width:100px}
 	#b{position:absolute;animation-name:slide3;animation-duration:5s;margin-top:98px;margin-left:100px;width:150px}
 	#c{position:absolute;animation-name:slide2;animation-duration:5s;margin-top:122px;margin-left:143px;width:70px}
-	 
+	#logo{display:inline-block;width:100%} 
   
  }
 #clickmenu{width:100%;height:100%;float:right;position:fixed;background-color:black;text-align:center;padding-top:40px;color:white;z-index:710;overflow:hidden;left:-100%;background-color:red}
@@ -70,7 +71,7 @@ h1{text-align:center;}
  <div id="clickmenu" ><!-------------clickmenu div starts here---------------->
 <div id='openmenu'><div id='menuitems'><h3>Home</h3></div><div id='menuitems'><h3>About Us</h3></div><div id='menuitems'><h3>Office Beares</h3></div><div id='menuitems'><h3>Kalamela-2022</h3></div><div id='menuitems'><h3>Membership</h3></div><div id='menuitems'><h3>Puraskaram</h3></div><div id='menuitems'><h3>Events Gallery</h3></div><div id='menuitems'><h3>Contact Us</h3></div><div id='menuitems' onclick='closer()'>close</div></div>
 </div><!------------clickmenu div ends here---------------->
-<div style="width:100%;height:auto;background-color:white"><img src="CMA_LOGO.jpg">
+<div style="width:100%;height:auto;background-color:white"><img id="logo" src="CMA_LOGO.jpg">
 <table id="menutab" style="display:inline-block;margin-left:4%;margin-top:15px;vertical-align:top">
 <tr>
 <th id="men">Home</th><th id="men">About Us<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Office Beares<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Kalamela-2022<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Membership<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Puraskaram<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Events</th><th id="men">Gallery<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Contact Us</th>
