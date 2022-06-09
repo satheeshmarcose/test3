@@ -91,7 +91,7 @@ h1{text-align:center;}
 #img3{animation-name:slider3;animation-duration:30s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;}
 #img4{animation-name:slider4;animation-duration:30s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;}
 #img5{animation-name:slider5;animation-duration:30s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;}	
-	
+#more{display:none}	
 	
 	</style>
 </head>
@@ -123,8 +123,9 @@ h1{text-align:center;}
 <div id="welcome"><!----welcome starts---------------------------------------------------------------------------------------------->
 <h1>Welcome to Chicago Malayalee Association (CMA)<div style="width:100%;height:2px;background-color:orange;margin-top:10px"></div></h1>
 
-<p>The Chicago Malayalee Association, established in 1972, is the oldest and largest Malayalee association in North America. It is a registered, non-profit, socio – cultural organization in the State of Illinois, and has almost 2500 registered members now.</p>
-<p>The purpose of this Association is to promote social, cultural, charitable, educational, and literary activities among the Malayalees of Metropolitan Chicago area, all over Illinois and the Midwest region. The Chicago Malayalee Association organizes co-operative and charitable activities in the general interest and well-being of the members of the association as and when required, and coordinates such activities with other communities.<br><br></p>
+<p>The Chicago Malayalee Association, established in 1972, is the oldest and largest Malayalee association in North America. It is a registered, non-profit, socio – cultural organization in the State of Illinois, and has almost 2500 registered members now.<span id="dots">...</span></p>
+<span id="more"><p>The purpose of this Association is to promote social, cultural, charitable, educational, and literary activities among the Malayalees of Metropolitan Chicago area, all over Illinois and the Midwest region. The Chicago Malayalee Association organizes co-operative and charitable activities in the general interest and well-being of the members of the association as and when required, and coordinates such activities with other communities.</p></span>
+<span id="morebutton" style="color:#e94c75" onclick="enlarge()">show more</span>
 </div><!----welcome ends-------------------------------------------------------------------------------------------------------------->
 
 
@@ -201,6 +202,22 @@ IL-60056, U.S.A.</div>
 </div><!------------footer ends------------>
 </body>
 <script>
+	function enlarge(){
+var dotvalue=document.getElementById("dots");
+var morevalue=document.getElementById("more");
+var morebuttonvalue=document.getElementById("morebutton");
+if(dotvalue.style.display=="none")
+ {document.getElementById("morebutton").innerHTML="show more";
+ document.getElementById("more").style.display="none";
+ document.getElementById("dots").style.display="inline";
+ }
+ else
+ {
+ document.getElementById("morebutton").innerHTML="show less";
+ document.getElementById("more").style.display="inline";
+ document.getElementById("dots").style.display="none";
+ }
+ }
 function menuopen(){
 document.getElementById("clickmenu").style.cssText="transform:translateX(100%);transition:.5s"
 
